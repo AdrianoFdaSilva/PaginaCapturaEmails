@@ -1,0 +1,35 @@
+.l-main {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    background: {
+        image: url("../image/testimonial-bg.jpg");
+        position: center;
+        size: cover;
+    }
+    &__formContainer {
+        max-width: 30rem;
+        background-color: rgba(255, 255, 255, 0.65);
+        padding: 2rem;
+        & h2 {
+            font-size: 2.3rem;
+        }
+        & p {
+            font-size: 1.6rem;
+        }
+    }
+    & form {
+        font-size: 2.5rem;
+        & input[type="submit"] {
+            color: $white;
+            background-color: $primary;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .l-main {
+        justify-content: center;
+    }
+}
